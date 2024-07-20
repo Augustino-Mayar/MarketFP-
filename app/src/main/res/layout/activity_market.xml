@@ -1,0 +1,256 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log1"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agricultural_products"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@id/button_back"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text="@string/google"
+        android:textColor="@android:color/white"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btnGoogle"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Product 1 -->
+            <TextView
+                android:id="@+id/tvProduct1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mango"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_1_50_each"
+                android:textSize="16sp"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_juicy_and_sweet_tropical_fruit_rich_in_vitamins_and_antioxidants"
+                android:textSize="14sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Product 2 -->
+            <TextView
+                android:id="@+id/tvProduct2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maize"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_0_50_per_ear"
+                android:textSize="16sp"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_staple_grain_used_for_food_and_feed_known_for_its_versatility_and_nutritional_value"
+                android:textSize="14sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Product 3 -->
+            <TextView
+                android:id="@+id/tvProduct3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banana"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_0_30_each"
+                android:textSize="16sp"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_sweet_and_creamy_fruit_a_good_source_of_potassium_and_energy"
+                android:textSize="14sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Product 4 -->
+            <TextView
+                android:id="@+id/tvProduct4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tomato"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_2_00_per_kg"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_versatile_fruit_used_in_various_cuisines_rich_in_vitamins_a_and_c"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Product 5 -->
+            <TextView
+                android:id="@+id/tvProduct5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPrice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_1_00_each"
+                android:textSize="16sp"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_citrus_fruit_known_for_its_juicy_and_tangy_flavor_rich_in_vitamin_c"
+                android:textSize="14sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <TextView
+                android:id="@+id/tvProduct6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pineapple"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPrice6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_3_00_each"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_tropical_fruit_with_a_sweet_and_tart_flavor_excellent_for_digestion"
+                android:textSize="14sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
